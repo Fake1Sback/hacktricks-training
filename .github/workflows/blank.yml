@@ -30,4 +30,4 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
       # Hello from AWS: WhoAmI
       - name: list-secrets
-        run: aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:us-east-1:***:secret:flag_sts_lab_2-GaUAXo
+        run: aws secretsmanager get-secret-value --secret-id flag_sts_lab_2-GaUAXo
