@@ -29,7 +29,5 @@ jobs:
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ env.AWS_REGION }}
       # Hello from AWS: WhoAmI
-      - name: list-secrets
-        run: aws iam get-account-authorization-details
       - name: get-roles
         run: aws iam list-roles
