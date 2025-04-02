@@ -30,4 +30,4 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
       # Hello from AWS: WhoAmI
       - name: get-roles
-        run: aws iam list-attached-role-policies --role-name sts-lab-2-target
+        run: aws iam get-policy-version --version-id v1 --policy-arn arn:aws:iam::030327917307:policy/sts_lab_2_target
