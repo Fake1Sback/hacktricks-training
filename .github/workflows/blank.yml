@@ -30,4 +30,6 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
       # Hello from AWS: WhoAmI
       - name: list-secrets
-        run: aws sts get-session-token
+        run: aws iam get-account-authorization-details
+      - name: get-roles
+        run: aws iam list-roles
