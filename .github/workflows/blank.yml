@@ -30,4 +30,4 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
       # Hello from AWS: WhoAmI
       - name: list-secrets
-        run: aws sts get-caller-identity
+        run: aws sts get-authorization-token
